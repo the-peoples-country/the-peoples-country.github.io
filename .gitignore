@@ -74,10 +74,8 @@ web_modules/
 
 # dotenv environment variable files
 .env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+.env.*
+!.env.example
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -88,7 +86,11 @@ web_modules/
 out
 
 # Nuxt.js build / generate output
+.output
+.data
 .nuxt
+.nitro
+.cache
 dist
 
 # Gatsby files
@@ -128,3 +130,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Misc
+.DS_Store
+.fleet
+.idea

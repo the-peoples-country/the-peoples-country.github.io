@@ -1,0 +1,23 @@
+<template>
+  <div class="bg-white">
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav class="flex items-center justify-between p-6 lg:px-8">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">The People's Country</span>
+            <img class="h-8 w-auto" src="/favicon.png" alt="">
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="text-center">
+          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">The People's Country</h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600">A Country worth DYING for!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
