@@ -16,8 +16,13 @@
         <div class="text-center">
           <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">The People's Country</h1>
           <p class="mt-6 text-lg leading-8 text-gray-600">A Country worth DYING for!</p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a href="https://github.com/the-peoples-country/.github/issues/new?assignees=&labels=&projects=&template=citizenship-request.md&title=Citizenship+Request+-+The+People%27s+Country" class="rounded-md bg-gray-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">Request Citizenship</a>
+          </div>
         </div>
       </div>
     </div>
+
+
   </div>
 </template>
