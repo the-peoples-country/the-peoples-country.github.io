@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         href: '/site.webmanifest?v=0.1.0'
       }, {
         rel: 'mask-icon',
-        color: '#000000',
+        color: '#ffffff',
         href: '/safari-pinned-tab.svg?v=0.2.0'
       }, {
         rel: 'shortcut icon',
@@ -44,7 +44,7 @@ export default defineNuxtConfig({
         content: "The People's Country"
       }, {
         name: 'msapplication-TileColor',
-        content: "#da532c"
+        content: "#ffffff"
       }, {
         name: 'msapplication-TileImage',
         content: "/mstile-144x144.png?v=0.1.0"
