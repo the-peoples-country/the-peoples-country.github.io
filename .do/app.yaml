@@ -7,3 +7,8 @@ static_sites:
     branch: main
     deploy_on_push: true
   source_dir: docs/
+  envs:
+  - scope: RUN_AND_BUILD_TIME
+    type: GENERAL
+    key: URL
+    value: "peoples.country"
