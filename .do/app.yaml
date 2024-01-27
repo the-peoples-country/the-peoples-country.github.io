@@ -1,0 +1,9 @@
+name: the-peoples-country
+static_sites:
+- name: the-peoples-country-website
+  environment_slug: html
+  github:
+    repo: the-peoples-country/the-peoples-country.github.io
+    branch: main
+    deploy_on_push: true
+  source_dir: docs/
