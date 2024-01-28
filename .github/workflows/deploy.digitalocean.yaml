@@ -30,6 +30,7 @@ jobs:
       - name: Build Nuxt Project
         run: |
           cd ${{ github.workspace }}/src
+          yarn install
           yarn build
       - name: Install DigitalOcean CLI
         uses: digitalocean/action-doctl@v2
