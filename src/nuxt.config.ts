@@ -65,9 +65,9 @@ export default defineNuxtConfig({
   nitro: {
     minify: true,
     static: true,
-    output: {
-      publicDir: path.join(__dirname, 'docs')
-    }
+    // output: {
+    //   publicDir: path.join(__dirname, 'docs')
+    // }
   },
 
   // https://nuxt.com/modules/tailwindcss

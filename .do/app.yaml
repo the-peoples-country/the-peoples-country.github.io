@@ -5,4 +5,4 @@ static_sites:
   github:
     repo: the-peoples-country/the-peoples-country.github.io
     branch: feat/hosting-digitalocean
-  source_dir: src/docs/
+  source_dir: src/.output/public
