@@ -86,7 +86,7 @@ web_modules/
 out
 
 # Nuxt.js build / generate output
-.output
+# .output
 .data
 .nuxt
 .nitro

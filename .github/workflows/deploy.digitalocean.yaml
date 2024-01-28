@@ -14,12 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "github object: ${{github}}"
-          echo "runner object: ${{runner}}"
-          echo "job object: ${{job}}"
-      # - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      # - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      # - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+          echo "github object: '${{ toJson(github) }}'"
+          echo "runner object: '${{ toJson(runner) }}'"
+          echo "job object: '${{ toJson(job) }}'"
       - name: Check Repository Code
         uses: actions/checkout@v4
       # - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
