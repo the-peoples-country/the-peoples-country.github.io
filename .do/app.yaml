@@ -4,11 +4,5 @@ static_sites:
   environment_slug: html
   github:
     repo: the-peoples-country/the-peoples-country.github.io
-    branch: main
-    deploy_on_push: true
-  source_dir: docs/
-  envs:
-  - scope: RUN_AND_BUILD_TIME
-    type: GENERAL
-    key: URL
-    value: "peoples.country"
+    branch: feat/hosting-digitalocean
+  source_dir: src/docs/
