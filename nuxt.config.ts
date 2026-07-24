@@ -1,4 +1,7 @@
 export default defineNuxtConfig({
+  // Pins framework behaviour defaults to this project's start date.
+  compatibilityDate: '2026-07-24',
+
   modules: ['@nuxt/content'],
 
   css: ['~/assets/css/main.css'],
