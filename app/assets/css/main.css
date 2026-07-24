@@ -1,0 +1,160 @@
+:root {
+  --bg: #fdfdfc;
+  --fg: #1a1a18;
+  --muted: #6b6b66;
+  --rule: #e3e3df;
+  --link: #1e5fa8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141413;
+    --fg: #eeeeec;
+    --muted: #9a9a93;
+    --rule: #2c2c29;
+    --link: #7fb3e8;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.65 ui-serif, Georgia, "Times New Roman", serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+.shell {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 6rem;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.wordmark {
+  font-weight: 700;
+  font-size: 1.0625rem;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+header a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 2.25rem 0 0.5rem;
+}
+
+input[type="search"] {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 2rem;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+
+input[type="search"]:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 1px;
+  border-color: transparent;
+}
+
+.posts,
+.results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.posts > li,
+.results > li {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.posts > li:last-child,
+.results > li:last-child {
+  border-bottom: 0;
+}
+
+.posts a,
+.results a {
+  font-weight: 600;
+}
+
+.crumb {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.muted {
+  color: var(--muted);
+  margin: 0.35rem 0 0;
+  font-size: 0.9375rem;
+}
+
+time.muted {
+  display: block;
+  font-variant-numeric: tabular-nums;
+}
+
+article :deep(p) {
+  margin: 1rem 0;
+}
+
+article :deep(code) {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.875em;
+  padding: 0.1em 0.3em;
+  background: var(--rule);
+  border-radius: 3px;
+}
+
+article :deep(pre) {
+  overflow-x: auto;
+  padding: 0.9rem 1rem;
+  background: var(--rule);
+  border-radius: 6px;
+}
+
+article :deep(pre code) {
+  padding: 0;
+  background: none;
+}
